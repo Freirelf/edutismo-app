@@ -1,0 +1,51 @@
+.card {
+  width: 25rem;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.card-content {
+
+  h2 {
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--yellowText);
+  }
+  
+  p {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--white-100);
+    text-shadow: 1px 3px 2px #000000;
+  }
+  
+  button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(
+    45deg,
+    var(--admonition-warning),
+    var(--blueText)
+    );
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+  }
+}

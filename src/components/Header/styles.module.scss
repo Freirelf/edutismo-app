@@ -1,0 +1,47 @@
+.headerContainer {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 0 8px;
+  background-color: #00000059;
+  box-shadow: inset 0px 0px 10px 2px #cec6c661;
+  gap: 10rem;
+
+  .headerContent {
+    max-width: 1220px;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+  }
+
+  a {
+    font-size: 16px;
+    font-family: 'Chango', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 3px 2px #000000;
+  }
+
+  .homeLink{
+    color: var(--orangeText);
+    border: 3px solid var(--orangeText);
+    padding: 5px;
+    box-shadow: 0px 0px 5px 0px var(--white-100);
+  }
+  .educationLink{
+    color: var(--blueText);
+  }
+  .blogLink{
+    color: var(--greenText);
+  }
+  .gameLink{
+    color: var(--yellowText);
+  }
+
+
+
+}

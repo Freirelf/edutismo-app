@@ -1,0 +1,93 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  background: linear-gradient(
+    45deg,
+    rgb(90 79 44 / 78%), rgb(76 67 114 / 78%)
+  );
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+  color: var(--white-100);
+  font-family: 'Chango', sans-serif;
+  text-align: center;
+  box-shadow: inset 0px 0px 3px 1px #ffffff73;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  padding: 3px 0px 3px 0px;
+  border-bottom: 1px solid #ccc;
+  user-select: none;
+  font-size: 16px;
+  color: var(--orangeText);
+  text-shadow: 1px 3px 2px #000000;
+
+  &:hover {
+    box-shadow: 
+    -2px 1px 3px 2px var(--greenText), 
+    3px -1px 3px 2px var(--yellowText), 
+    3px 2px 2px 3px var(--blueText);
+    transform: translateX(-3px);
+  }
+}
+
+.dropdown-header.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.selected-profile {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #cccccc54;
+  box-shadow: inset 0px 0px 3px 1px #ffffff73;
+
+  .profilePais {
+    color: var(--yellowText);
+    text-shadow: 1px 3px 2px #000000;
+  }
+  .profileCrianca {
+    color: var(--greenText);
+    text-shadow: 1px 3px 2px #000000;
+  }
+}
+
+
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background:transparent;
+  border-top: none;
+  z-index: 1;
+
+  .dropdown-option {
+    background: linear-gradient(
+    45deg,
+    rgb(90 79 44 / 78%), rgb(76 67 114 / 78%)
+    );
+    text-shadow: 1px 3px 2px #000000;
+
+    &:hover {
+      background: linear-gradient(
+        45deg,
+        #a38a3cc2, #495484c7,
+      )
+    }
+
+  }
+}
+
+.dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+}
+

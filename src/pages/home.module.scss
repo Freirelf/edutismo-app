@@ -1,0 +1,163 @@
+.body {
+  background-image: url('../../public/images/Background.png');
+
+}
+
+.headerContent {
+  margin-top: 8px;
+  margin-left: 10rem;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainChildren {
+  margin: 6.5rem 0 0 4rem;
+}
+
+section.sectionOrange {
+  background-image: url('../../public/images/element.svg');
+  width: 700px;
+  height: 665px;
+  margin-top: -7rem;
+
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.selectProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  margin-left: 6rem;
+  margin-top: 13.5rem;
+
+  h1 {
+    font-size: 3rem;
+    color: var(--yellowText);
+    font-family: 'Chango', sans-serif;
+  }
+}
+
+.parents, .children {
+  width: 300px;
+  height: 100px;
+  box-shadow: 4px 1px 7px 5px #00000042;
+
+  padding: 1rem;
+  margin-top: 1.5rem;
+
+  border-radius: 10px;
+  border: 1px solid var(--gray-300);
+
+  background-color: var(--white-100);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Chango', sans-serif;
+}
+
+.parents {
+  h3 {
+    color: var(--blueText);
+  }
+
+  .linkParents {
+    background-color: var(--blueText);
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+     
+    a {
+      color: var(--yellowText);
+    }
+
+    &:hover {
+      background-color: var(--yellowText);
+      a{
+        color: var(--blueText);
+      }
+    }
+  }
+}
+
+.children {
+  h3 {
+    color: var(--greenText);
+  }
+
+  .linkChildren {
+    background-color: var(--greenText);
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+     
+    a {
+      color: var(--yellowText);
+    }
+
+    &:hover {
+      background-color: var(--yellowText);
+      a{
+        color: var(--greenText);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 820px) {
+  .headerContent {
+    margin-left: 1rem;
+    img{
+      width: 150px;
+    }
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mainChildren {
+    margin-left: 1rem;
+    width: 250px;
+  }
+
+  section.sectionOrange {
+    display: flex;
+    width: 100%;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .selectProfile {
+      width: 100%;
+      margin: initial;
+      margin: 1rem;
+    }
+
+    .parents, .children {
+      width: 100%;
+
+      h3, a {
+        font-size: .8rem;
+      }
+    }
+  }
+}
