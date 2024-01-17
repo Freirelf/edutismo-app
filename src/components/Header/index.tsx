@@ -1,4 +1,4 @@
-
+import { Link as ScrollLink} from 'react-scroll'
 import Link from "next/link"
 import styles from "./styles.module.scss"
 
@@ -19,20 +19,42 @@ export function Header({showGamesLink = true}) {
     <>
       <header className={styles.headerContainer}>
         <div className={styles.headerContent}>
-          <Link className={styles.homeLink} href="#">
+          <Link 
+            className={styles.homeLink} 
+            href="/">
             Home
           </Link>
-          <Link className={styles.educationLink} href="#">
+
+          <ScrollLink 
+            to="education"
+            smooth={true}
+            duration={500}
+            className={styles.educationLink} 
+          >
             Educação
-            </Link>
+          </ScrollLink>
+
           <img src="/images/Edutismo.svg" alt="Edutismo Logo" />
-          <Link className={styles.blogLink} href="#">
+
+          <ScrollLink 
+            to="blog"
+            smooth={true}
+            duration={500}
+            className={styles.blogLink} 
+          >
             Blog
-          </Link>
+          </ScrollLink>
+
           {showGamesLink && (
-            <Link className={styles.gameLink} href="#">
-              Jogos
-            </Link>
+
+          <ScrollLink 
+          to="game"
+          smooth={true}
+          duration={500}
+          className={styles.gameLink} 
+          > 
+            Jogos
+          </ScrollLink>
           )}
         </div>
 

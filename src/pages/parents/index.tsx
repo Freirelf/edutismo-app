@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-
+import { Element } from 'react-scroll'
 import styles from './styles.module.scss'
 import EmblaCarousel from "@/components/Carousel";
 
@@ -46,10 +46,10 @@ export default function Parents() {
       </aside>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
-      <section className={styles.education}>
+      <Element className={styles.education} name="education">
         <h1>Materiais para você aproveitar</h1>
         <p>Materiais para você baixar e ficar em dia com o autismo. Aproveite!</p>
-      </section>
+      </Element>
 
       <div className={styles.containerCard}>
         <Card 
@@ -87,7 +87,7 @@ export default function Parents() {
         <FormularioDuvidas />
       </section>
 
-      <div className={styles.containerBlog}>
+      <Element className={styles.blog} name="blog">
         <h1 className={styles.titleBlog}>Blog</h1>
         <div className={styles.blogCards}>
           <Card 
@@ -115,7 +115,7 @@ export default function Parents() {
           
           />
         </div>
-      </div>
+      </Element>
 
       <footer className={styles.footer}>
         <h1>Acompanhe nossas redes sociais!</h1>
