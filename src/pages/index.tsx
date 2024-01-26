@@ -29,7 +29,7 @@ export default function Home() {
               <div className={styles.children}>
                 <h3>Crianças</h3>
                 <div className={styles.linkChildren}>
-                  <Link href='#'>Acessar</Link>
+                  <Link href='/children'>Acessar</Link>
                 </div>
               </div>
             </div>

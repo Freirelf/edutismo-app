@@ -8,10 +8,7 @@ import Image from "next/image";
 import autimsParents from "../../../public/images/autimsParents.svg"
 import Card from "@/components/Card";
 import FormularioDuvidas from "@/components/Form";
-
-import { FaInstagram } from 'react-icons/fa' 
-import { FaWhatsapp} from 'react-icons/fa' 
-import { MdEmail } from 'react-icons/md' 
+import { Footer } from "@/components/Footer";
 
 const OPTIONS: EmblaOptionsType = {}
 const SLIDE_COUNT = 5
@@ -24,13 +21,13 @@ export default function Parents() {
       <Header showGamesLink={false} />
 
       <div className={styles.divMain}>
-        <img src="/images/post.png" alt="" />
+        <img src="/images/post.png" alt=" mulher segurando uma placa com informativos sobre autismo." />
       </div>
 
       <aside className={styles.aside}>
         <h1>Sobre nós</h1>
         <div className={styles.aboutUs}>
-          <div className="paragraph">
+          <div>
             <p>
               Bem-vindo ao <strong>Edutismo</strong>, um cantinho especial para famílias e amigos de pessoas incríveis com autismo! Nossa missão é tornar o universo do Transtorno do Espectro Autista (TEA) mais fácil de entender, com dicas úteis, orientações e muita diversão.
             </p>
@@ -40,7 +37,7 @@ export default function Parents() {
             </p>
           </div>
 
-          <Image src={autimsParents} alt="" />
+          <Image src={autimsParents} alt="imagem de uma mãe brincando com seu filho" />
         </div>
 
       </aside>
@@ -57,7 +54,7 @@ export default function Parents() {
           title="Terapia Ocupacional para crianças autistas"
           text="O assunto da vez é a Terapia Ocupacional, e para falar sobre o assunto com propriedade, convidamos a terapeuta ocupacional Mayara Farias Lima Sena. Ela é formada em Terapia Ocupacional pela Universidade Federal de Pernambuco desde 2016 e trabalha com crianças e adolescentes com transtornos do desenvolvimento, especialmente o Transtorno do Espectro Autista, desde a sua formação."
           buttonText="Baixe agora"
-          onClick={() => {}}
+          linkTo="/"
 
         />
 
@@ -67,7 +64,7 @@ export default function Parents() {
           text="O tema da vez é a terapia ABA e como o tratamento pode ajudar a melhorar a qualidade de vida dos autistas!
           O material que você está prestes a ler foi elaborado em parceria com a bHave, uma startup que tem como objetivo facilitar o processo terapêutico automatizando os registros, relatórios, processos burocráticos, e acompanhamento de resultados, que são parte essencial de qualquer terapia, especialmente ABA."
           buttonText="Baixe agora"
-          onClick={() => {}}
+          linkTo="/"
 
         />  
 
@@ -76,7 +73,7 @@ export default function Parents() {
           title="9 atividades para fazer em casa com crianças autistas"
           text="O material que vamos apresentar hoje é muito especial, pois foi elaborado em parceria com o professor Márcio de Castro, também conhecido como professor Dicastro. Ele é Pós-graduando em Intervenção ABA no Autismo e Deficiência Intelecutual pela Child Behavior Institute of Miami – CBI of Miami. Terapeuta ABA no Autismo em formação pela Academia do Autismo."
           buttonText="Baixe agora"
-          onClick={() => {}}
+          linkTo="/"
         />
       </div>
 
@@ -95,7 +92,7 @@ export default function Parents() {
             title="Terapia Sensorial para Autismo: Como os estímulos sensoriais melhoram a qualidade de vida"
             text="Você sabia que a terapia sensorial para o autismo"
             buttonText="Leia mais"
-            onClick={() => {}}
+            linkTo="/"
           />
 
           <Card 
@@ -103,7 +100,7 @@ export default function Parents() {
             title="Inclusão de autistas em ambientes diversos"
             text="Dependendo da sua perspectiva, pode parecer que inclusão de autistas é,"
             buttonText="Leia mais"
-            onClick={() => {}}  
+            linkTo="/"  
           />
 
           <Card 
@@ -111,22 +108,13 @@ export default function Parents() {
             title="Brincadeiras funcionais: 7 ideias para crianças com autismo"
             text="O brincar é importante para qualquer criança. Durante boa parte da"
             buttonText="Leia mais"
-            onClick={() => {}}
+            linkTo="/"
           
           />
         </div>
       </Element>
 
-      <footer className={styles.footer}>
-        <h1>Acompanhe nossas redes sociais!</h1>
-        <a href=""><FaInstagram className={styles.icon} /></a>
-        <a href=""><FaWhatsapp className={styles.icon} /></a>
-        <a href=""><MdEmail className={styles.icon} /></a>
-        
-        <div className={styles.rights}>
-          <p>Todos os direitos reservados!</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }

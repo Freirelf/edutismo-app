@@ -4,16 +4,13 @@ import styles from "./styles.module.scss"
 
 import Dropdown from "../DropdownButton";
 
-
-
-export function Header({showGamesLink = true}) {
+export function Header({showGamesLink = true, showBlogLink = true}) {
 
 
   const profiles = [
     { value: 'parent', label: 'Pais/Mães', destination: '/parents' },
     { value: 'child', label: 'Crianças', destination: '/children' },
   ];
-
 
   return (
     <>
@@ -36,6 +33,7 @@ export function Header({showGamesLink = true}) {
 
           <img src="/images/Edutismo.svg" alt="Edutismo Logo" />
 
+          {showBlogLink && (
           <ScrollLink 
             to="blog"
             smooth={true}
@@ -44,14 +42,14 @@ export function Header({showGamesLink = true}) {
           >
             Blog
           </ScrollLink>
+          )}
 
           {showGamesLink && (
-
           <ScrollLink 
-          to="game"
-          smooth={true}
-          duration={500}
-          className={styles.gameLink} 
+            to="game"
+            smooth={true}
+            duration={500}
+            className={styles.gameLink} 
           > 
             Jogos
           </ScrollLink>

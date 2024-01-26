@@ -310,6 +310,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+responsivevoice@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/responsivevoice/-/responsivevoice-0.4.1.tgz"
+  integrity sha512-OQZ4vxfqwiYKdIKCA3TW+F6wY9cJDZJpUU+RKBzL1iAuJEp4KSJ+pyrKXajI62UThfGH95Gj4dA+wh4jDYlISw==
+
 sass@^1.3.0, sass@^1.69.5:
   version "1.69.5"
   resolved "https://registry.npmjs.org/sass/-/sass-1.69.5.tgz"

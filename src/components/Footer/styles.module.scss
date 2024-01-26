@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding: 5rem 0 0 0;
+  h1{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Chango', sans-serif;
+    color: var(--white-100);
+  }
+
+  .icon {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: var(--admonition-warning);
+    width: 30px;
+    height: 30px;
+  }
+
+  .rights {
+    background: #000;
+    margin-top: 5rem;
+  }
+
+  p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+}

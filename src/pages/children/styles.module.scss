@@ -1,0 +1,50 @@
+.main{
+  text-align: center;
+  h1 {
+    font-family: 'Chango', sans-serif;
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem 0;
+    color: var(--orangeText);
+    text-shadow: 1px 3px 2px #000000;
+  }
+
+  p{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--white-100);
+    text-shadow: 1px 3px 2px #000000;
+  }
+
+  .games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.toColor {
+  background-color: var(--orangeText);
+  text-align: center;
+
+  h1 {
+    font-family: 'Chango', sans-serif;
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem 0;
+    color: var(--blueText);
+    text-shadow: 1px 3px 2px #000000;
+  }
+
+  p{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--white-100);
+    text-shadow: 1px 3px 2px #000000;
+  }
+  .colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+}
+
