@@ -23,15 +23,15 @@ export default function Children(){
             title="Adivinhação"
             text="jogo de adivinhação"
             buttonText="Jogar"
-            linkTo="/game"
+            linkTo="/gameRandom"
           />
 
           <Card 
             imageSrc="images/gameMemo.png"
-            title="Jogo da Velha"
-            text="Jogo da Velha"
+            title="Jogo da Memória"
+            text="Jogo da Memória"
             buttonText="Jogar"
-            linkTo="/"
+            linkTo="/gameMemorization"
           />
         </div>
       </main>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import styles from "./styles.module.scss"
 
-export default function Game() {
+export default function GameRandom() {
   const [defaultNumberGame] = useState(10);
   const [numberGame, setNumberGame] = useState(defaultNumberGame)
   const [secretNumber, setSecretNumber] = useState(generateNumberRandom())
@@ -22,8 +22,8 @@ export default function Game() {
     setTitle('Jogo do Número Secreto');
     setParagraph(`Escolha um número entre 1 e ${numberGame}. Veja sua sorte!`);
   }
-
-  function generateNumberRandom() {
+  
+  function generateNumberRandom(maxNumber?: number) {
     let chosenNumber = Math.floor(Math.random() * numberGame + 1);
 
     return chosenNumber

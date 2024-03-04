@@ -1,0 +1,37 @@
+.card {
+  width: 9.375rem; 
+  height: 9.375rem;
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.cardBack {
+  background-color: #831670;
+  
+}
+.cardFront {
+  transform: rotateY(180deg);
+  background-color:  #b1349de2;
+}
+
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+  backface-visibility: hidden;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+
