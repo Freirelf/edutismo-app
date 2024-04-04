@@ -1,11 +1,24 @@
 .footer {
   text-align: center;
   padding: 5rem 0 0 0;
-  h1{
-    font-size: 18px;
+  background-image: url('../../../public/images/Background.png');
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h3{
+    font-size: 1rem;
     text-align: center;
-    font-family: 'Chango', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: var(--white-100);
+    margin-top: 1rem;
+  }
+
+  .location {
+    color: var(--orangeText);
   }
 
   .icon {
@@ -17,13 +30,14 @@
   }
 
   .rights {
-    background: #000;
-    margin-top: 5rem;
+    background: #0000007e;
+    margin-top: 3rem;
   }
 
   p{
     color: #fff;
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
+    padding: 1rem;
   }
 }

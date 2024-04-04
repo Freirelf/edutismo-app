@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import styles from './styles.module.scss'
 import Card from "@/components/Card";
 import { Footer } from "@/components/Footer";
+import CardDownloadImage from "@/components/CardDownloadImage";
 
 export default function Children(){
 
@@ -16,7 +17,7 @@ export default function Children(){
 
       <main className={styles.main}>
         <h1>Jogos</h1>
-        <p>Venha se divertir, e aprender ao mesmo tempo!</p>
+        <p className={styles.text}>Se diverta, e aprenda ao mesmo tempo :)</p>
         <div className={styles.games}>
           <Card 
             imageSrc="images/gameAd.png"
@@ -38,39 +39,35 @@ export default function Children(){
 
       <section className={styles.toColor}>
         <h1>Para colorir</h1>
-        <p>Agora você tem um espaço exclusivo para baixar nossos desenhos e colorir como preferir!</p>
+        <p>Você tem um espaço exclusivo para baixar nossos desenhos e colorir como preferir!</p>
 
         <div className={styles.colors}>
-          <Card 
+          <CardDownloadImage 
             imageSrc="images/colors1.png"
-            title=""
-            text=""
+            title="Foguetinho"
+            text="Sua imaginação com cores"
             buttonText="Baixar"
-            linkTo="/"
           />
 
-          <Card 
+          <CardDownloadImage 
             imageSrc="images/colors2.png"
-            title=""
-            text=""
+            title="Dino"
+            text="Sua imaginação com cores"
             buttonText="Baixar"
-            linkTo="/"
           />
 
-          <Card 
+          <CardDownloadImage 
             imageSrc="images/colors3.png"
-            title=""
-            text=""
+            title="Bixinho"
+            text="Sua imaginação com cores"
             buttonText="Baixar"
-            linkTo="/"
           />
           
-          <Card 
+          <CardDownloadImage 
             imageSrc="images/colors4.png"
-            title=""
-            text=""
+            title="Super"
+            text="Sua imaginação com cores"
             buttonText="Baixar"
-            linkTo="/"
           />          
         </div>
       </section>

@@ -1,44 +1,55 @@
 .main{
   text-align: center;
+  background-image: url('../../../public/images/Background.png');
+
   h1 {
     font-family: 'Chango', sans-serif;
     font-size: 2.5rem;
-    margin: 4rem 0 2rem 0;
+    padding: 2rem 0;
     color: var(--orangeText);
     text-shadow: 1px 3px 2px #000000;
   }
 
-  p{
-    font-size: 16px;
+  p.text{
+    padding: 1rem;
+    font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
     color: var(--white-100);
-    text-shadow: 1px 3px 2px #000000;
+    text-shadow: -1px 1px 9px var(--orangeText);
+    background-color: #7978785b;
   }
 
   .games {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 2rem;
   }
 }
 
 .toColor {
   background-color: var(--orangeText);
+  background-image: url('../../../public/images/Ruido.png');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 3rem;
   text-align: center;
 
   h1 {
     font-family: 'Chango', sans-serif;
     font-size: 2.5rem;
-    margin: 4rem 0 2rem 0;
+    padding: 2rem 0;
     color: var(--blueText);
     text-shadow: 1px 3px 2px #000000;
   }
 
   p{
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1.5rem;
     font-family: 'Nunito Sans', sans-serif;
     color: var(--white-100);
-    text-shadow: 1px 3px 2px #000000;
+    text-shadow: -1px 1px 9px var(--blueText);
+    background-color: #7978785b;
   }
   .colors {
     display: flex;
