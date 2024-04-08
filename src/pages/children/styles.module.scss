@@ -1,6 +1,15 @@
+.containerMain{
+  display: flex;
+  justify-content: center;
+}
+
 .main{
   text-align: center;
   background-image: url('../../../public/images/Background.png');
+
+  img {
+    width: 500px;
+  }
 
   h1 {
     font-family: 'Chango', sans-serif;

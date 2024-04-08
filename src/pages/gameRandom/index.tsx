@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import styles from "./styles.module.scss"
+import { Header } from "@/components/Header";
 
 export default function GameRandom() {
   const [defaultNumberGame] = useState(10);
@@ -72,59 +73,62 @@ export default function GameRandom() {
     };
 
   return (
-    <div className={styles.body}>
-      <div className={styles.containerGame}>
-        <div className={styles.containerConteudo}>
-        <div className={styles.return}>
-          <a href="/children">
-            <IoChevronBackCircleOutline size={50} color="blue"/>
-          </a>
-      </div>
-          <div className={styles.containerInformacoes}>
-            <div className={styles.containerTexto}>
-              <h1>{title}</h1>
-              <p>{paragraph}</p>
-            </div>
-            <input
-              className={styles.containerInput}
-              type="number"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              placeholder="Digite seu palpite"
-            />
-            <div className={styles.containerBotoes}>
-              <button 
-              onClick={checkKick}
-              className={styles.containerBotao}>
-                Chutar
-              </button>
-              <button
-                onClick={resetGame}
-                id="reiniciar"
-                className={styles.containerBotao}
-                disabled={isGameOver}
-              >
-                Novo jogo
-              </button>
-            </div>
-            <div className={styles.additionalNumber}>
-              <h2>Quer escolher até qual número jogar?</h2>
-              <p>Digite o número desejado</p>
-              <input 
-                type="number" 
-                onChange={handleCustomNumberGameChange}
-                value={customNumberGame || ''}
-                placeholder="Digite um número"
+    <>
+      <Header showEducationLink={false} showBlogLink={false} showGamesLink={false}/>
+      <div className={styles.body}>
+        <div className={styles.containerGame}>
+          <div className={styles.containerConteudo}>
+          <div className={styles.return}>
+            <a href="/children">
+              <IoChevronBackCircleOutline size={50} color="violet"/>
+            </a>
+        </div>
+            <div className={styles.containerInformacoes}>
+              <div className={styles.containerTexto}>
+                <h1>{title}</h1>
+                <p>{paragraph}</p>
+              </div>
+              <input
+                className={styles.containerInput}
+                type="number"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                placeholder="Digite seu palpite"
               />
-              <button onClick={handleSetCustomGameNumber}>Definir</button>
+              <div className={styles.containerBotoes}>
+                <button 
+                onClick={checkKick}
+                className={styles.containerBotao}>
+                  Chutar
+                </button>
+                <button
+                  onClick={resetGame}
+                  id="reiniciar"
+                  className={styles.containerBotao}
+                  disabled={isGameOver}
+                >
+                  Novo jogo
+                </button>
+              </div>
+              <div className={styles.additionalNumber}>
+                <h2>Quer escolher até qual número jogar?</h2>
+                <p>Digite o número desejado</p>
+                <input 
+                  type="number" 
+                  onChange={handleCustomNumberGameChange}
+                  value={customNumberGame || ''}
+                  placeholder="Digite um número"
+                />
+                <button onClick={handleSetCustomGameNumber}>Definir</button>
+              </div>
             </div>
+            <img
+              src="images/ia.png"
+              alt="Uma pessoa olhando para a esquerda"
+            />
           </div>
-          <img
-            src="images/ia.png"
-            alt="Uma pessoa olhando para a esquerda"
-          />
         </div>
       </div>
-    </div>
+    </>
   );
 };

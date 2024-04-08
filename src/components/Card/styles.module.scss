@@ -34,18 +34,23 @@
     font-weight: bold;
     background: linear-gradient(
     45deg,
-    var(--admonition-warning),
+    var(--orangeText),
     var(--blueText)
     );
-    color: #fff;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 1rem;
+    font-weight: bold;
+
+    a{
+      color: #fff;
+    }
 
     &:hover {
       filter: brightness(.9);
     }
+
   }
 }

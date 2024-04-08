@@ -3,12 +3,14 @@ import CardComponent from './CardComponent';
 
 import styles from './styles.module.scss';
 import GameOverScreen from './GameOverScreen';
+import { Header } from '@/components/Header';
 
 const GameMemorization: React.FC = () => {
   const { cards, flipCard, gameStatus } = useGame();
 
   return (
     <>
+      <Header showEducationLink={false} showBlogLink={false} showGamesLink={false}/>
       <header className={styles.header}>
         <h1>Jogo da memorização</h1>
         <a href='/children'> voltar</a>

@@ -1,7 +1,5 @@
 import { saveAs } from "file-saver"; 
-
 import styles from './styles.module.scss'
-import Link from 'next/link'
 
 type CardProps = {
   imageSrc: string, 

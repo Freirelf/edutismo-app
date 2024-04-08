@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 
 import Dropdown from "../DropdownButton";
 
-export function Header({showGamesLink = true, showBlogLink = true}) {
+export function Header({showGamesLink = true, showBlogLink = true, showEducationLink = true}) {
 
 
   const profiles = [
@@ -22,14 +22,18 @@ export function Header({showGamesLink = true, showBlogLink = true}) {
             Home
           </Link>
 
-          <ScrollLink 
-            to="education"
-            smooth={true}
-            duration={500}
-            className={styles.educationLink} 
-          >
-            Educação
-          </ScrollLink>
+          {showEducationLink && (
+             <ScrollLink 
+             to="education"
+             smooth={true}
+             duration={500}
+             className={styles.educationLink} 
+             
+           >
+             Educação
+           </ScrollLink>
+          )}
+         
 
           <img src="/images/Edutismo.svg" alt="Edutismo Logo" />
 
