@@ -9,6 +9,11 @@ interface CardProps {
 }
 
 const CardComponent: React.FC<CardProps> = ({ card, onCardClick }) => {
+  if (!card) {
+    return (
+      <div>Loading...</div>
+    )
+  }
   return (
     <div className={`${styles.card} ${card.isFlipped ? styles.flip : ''}`} onClick={onCardClick}>
       <div className={styles.cardFront}>
