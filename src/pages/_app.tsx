@@ -6,7 +6,7 @@ import '../styles/global.scss'
 
 import '../components/Carousel/css/base.scss'
 import '../components/Carousel/css/embla.scss'
-import { GameProvider } from './gameMemorization/GameContext';
+import GameProvider from './gameMemorization/GameContext';
 
 
 export default function App({ Component, pageProps }: AppProps) {
