@@ -118,5 +118,14 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
     }
   }, [matchedCards, cards]);
 
-  return <GameContext.Provider value={{ cards, flipCard, matchedCards, gameStatus, restartGame }}>{children}</GameContext.Provider>;
+  return (
+    <GameContext.Provider value={{ 
+      cards, 
+      flipCard, 
+      matchedCards, 
+      gameStatus, 
+      restartGame 
+    }}>
+      {children}
+    </GameContext.Provider>)
 };
