@@ -68,3 +68,33 @@
   }
 }
 
+@media(max-width:640px) {
+  .main {
+    h1{
+      font-size: 16px;
+    }
+
+    p.text{
+      font-size: 14px;
+    }
+
+    .games {
+      flex-direction: column;
+    }
+  }
+
+  .toColor{
+    h1 {
+      font-size: 16px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+
+    .colors{
+      flex-direction: column;
+    }
+  }
+}
+

@@ -21,7 +21,7 @@
 }
 .embla__slide__img {
   display: block;
-  height: 400px;
+  height: 310px;
   width: 400px;
   object-fit: cover;
 }
@@ -97,4 +97,21 @@
     var(--admonition-warning),
     var(--blueText)
   );
+}
+
+@media (max-width: 640px) { 
+  .embla__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .embla__slide__img {
+    width: initial;
+    height: initial;
+    max-width: 100%;
+  }
+
+  .embla__buttons {
+    display: none;
+  }
 }

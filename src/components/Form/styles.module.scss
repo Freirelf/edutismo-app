@@ -43,3 +43,15 @@
   }
 
 }
+
+@media(max-width:640px){
+  .formularioDuvidasContainer {
+    max-width: 90vw;
+    
+    label {
+      font-size: 14px;
+    }
+  }
+
+  
+}

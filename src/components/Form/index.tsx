@@ -19,8 +19,6 @@ const FormularioDuvidas = () => {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para lidar com os dados do formulário
-    console.log(formData);
   };
 
   return (

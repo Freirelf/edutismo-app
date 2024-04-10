@@ -15,7 +15,6 @@
 }
 
 .card-content {
-
   h2 {
     font-size: 18px;
     font-family: 'Nunito Sans', sans-serif;
@@ -48,6 +47,22 @@
 
     &:hover {
       filter: brightness(.9);
+    }
+  }
+}
+
+@media(max-width: 640px) {
+  .card {
+    max-width: 90vw;
+  }
+  
+  .card-content {
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
     }
   }
 }

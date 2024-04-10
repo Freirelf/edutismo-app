@@ -58,8 +58,6 @@
   }
 }
 
-
-
 .dropdown-options {
   position: absolute;
   top: 100%;
@@ -91,3 +89,8 @@
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .dropdown-option, .dropdown-header {
+    font-size: 12px;
+  }
+}

@@ -21,8 +21,6 @@ export default function BlogTherapy() {
 
           <p>Por isso, neste artigo, exploraremos mais profundamente como a terapia sensorial pode ser benéfica para crianças com autismo, abordando os diferentes tipos de estímulos sensoriais utilizados nessa terapia, como o toque, sons, aromas e movimentos, e como esses estímulos podem influenciar positivamente o desenvolvimento das crianças. Por último, discutiremos as várias técnicas utilizadas na terapia sensorial e como os pais e profissionais podem implementá-las no dia a dia.</p>
 
-          <img src="" alt="" />
-
         </div>
 
         <div className={styles.about}>

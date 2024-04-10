@@ -78,11 +78,11 @@ export default function GameRandom() {
       <div className={styles.body}>
         <div className={styles.containerGame}>
           <div className={styles.containerConteudo}>
-          <div className={styles.return}>
-            <a href="/children">
-              <IoChevronBackCircleOutline size={50} color="violet"/>
-            </a>
-        </div>
+            <div className={styles.return}>
+              <a href="/children">
+                <IoChevronBackCircleOutline size={50} color="violet"/>
+              </a>
+            </div>
             <div className={styles.containerInformacoes}>
               <div className={styles.containerTexto}>
                 <h1>{title}</h1>

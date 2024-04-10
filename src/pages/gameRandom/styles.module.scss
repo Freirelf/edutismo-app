@@ -19,7 +19,7 @@
 }
 
 .containerGame {
-  width: 80%;
+  width: 90%;
   height: 90%;
   display: flex;
   align-items: center;
@@ -143,7 +143,7 @@
     border-radius: 5px;
     background: var(--blueText);
     color: var(--white-100);
-    text-shadow: 2px 1px 2px #000000;
+    text-shadow: 1px 1px 1px #00000046;
     box-shadow: 0px 0px 6px 2px #e2e1e4e1;
     padding: .35rem;
     font-weight: 700;
@@ -159,9 +159,57 @@
 
 .return a {
   margin-left: 1rem;
-  color: aliceblue;
   :hover{
     background-color: #e2e1e4e1;
     border-radius: 16px;
+  }
+}
+
+@media(max-width: 640px) {
+  .body{
+    .containerConteudo {
+      flex-direction: column;
+    }
+
+    .containerInformacoes {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .containerTexto {
+      h1, p {
+        font-size: 16px;
+      }
+    }
+    
+    .containerInput {
+      width: 60%;
+      padding: 1rem;
+      font-size: 16px;
+    }
+
+    .containerBotoes {
+      align-items: center;
+      button {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+
+    .additionalNumber {
+      h2, p {
+        font-size: 16px;
+      }
+
+      input, button {
+        font-size: 14px;
+      }
+    }
+  
+    img {
+      display: none;
+    }
   }
 }

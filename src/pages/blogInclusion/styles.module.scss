@@ -24,23 +24,6 @@
   }
 }
 
-.connection {
-  .images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    width: 500px;
-    margin: 0 auto;
-
-    img {
-      &:nth-child(2) {
-        width: 300px;
-      }
-    }
-  }
-}
-
 .back {
   text-align: center;
   a {
@@ -58,6 +41,30 @@
 
     &:hover{
       color: var(--orangeText);
+    }
+  }
+}
+
+@media(max-width: 640px) {
+  .main{
+    padding: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  
+    h1,h2 {
+      font-size: 16px;
+    }
+  
+    p, li{
+      font-size: 14px;
+    }
+  }
+  
+  .back {
+    a{
+      font-size: 14px;
     }
   }
 }
