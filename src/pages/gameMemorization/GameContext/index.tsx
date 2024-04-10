@@ -28,7 +28,7 @@ interface GameProviderProps {
   children: React.ReactNode;
 }
 
-export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
+ const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
   const [cards, setCards] = useState<Card[]>([]);
   const [openCards, setOpenCards] = useState<string[]>([]);
   const [matchedCards, setMatchedCards] = useState<string[]>([]);
@@ -129,3 +129,5 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
       {children}
     </GameContext.Provider>)
 };
+
+export default GameProvider;
