@@ -102,7 +102,6 @@ O Edutismo é licenciado sob a licença MIT.
 
 ## Links úteis
 
-* Repositório do Edutismo: [https://github.com/edutismo/edutismo](https://github.com/edutismo/edutismo)
 * Documentação do React: [https://reactjs.org/](https://reactjs.org/)
 * Documentação do Next.js: [https://nextjs.org/](https://nextjs.org/)
 * Documentação do Sass: [https://sass-lang.com/](https://sass-lang.com/)
