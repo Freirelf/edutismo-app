@@ -17,7 +17,7 @@ export default function Children(){
 
       <main className={styles.main} >
       <img src="/images/blogChildren.png" alt="" />
-      <Element name="game">
+      <Element name="game" id="games">
         <h1>Jogos</h1>
         </Element>
         <p className={styles.text}>Se diverta, e aprenda ao mesmo tempo :)</p>
@@ -41,7 +41,7 @@ export default function Children(){
       </main>
 
       <section className={styles.toColor}>
-        <Element name="education">
+        <Element name="education" id="education">
           <h1>Para colorir</h1> 
         </Element>
         <p>Você tem um espaço exclusivo para baixar nossos desenhos e colorir como preferir!</p>

@@ -44,7 +44,7 @@ export default function Parents() {
       </aside>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
 
-      <Element className={styles.education} name="education">
+      <Element className={styles.education} name="education" id="education">
         <h1>Materiais para você aproveitar</h1>
         <p>Materiais para você baixar e ficar em dia com o autismo. Aproveite!</p>
       </Element>
@@ -107,7 +107,7 @@ export default function Parents() {
         </div>
       </div>
 
-      <Element className={styles.blog} name="blog">
+      <Element className={styles.blog} name="blog" id="blog">
         <h1 className={styles.titleBlog}>Blog</h1>
         <div className={styles.blogCards}>
           <Card 

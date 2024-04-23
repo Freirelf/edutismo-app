@@ -18,6 +18,13 @@ export function Header({showGamesLink = true, showBlogLink = true, showEducation
     setIsOpen(!isOpen)
   }
 
+  const handleTouchScroll = (elementId: string) => {
+    const element = document.getElementById(elementId)
+    window.scrollTo({
+      top: element?.offsetTop
+    })
+  }
+
   return (
     <>
       <header className={styles.headerContainer}>
@@ -25,7 +32,8 @@ export function Header({showGamesLink = true, showBlogLink = true, showEducation
           <div className={styles.headerContent}>
             <Link 
               className={styles.homeLink} 
-              href="/">
+              href="/"
+              >
               Home
             </Link>
 
@@ -35,7 +43,6 @@ export function Header({showGamesLink = true, showBlogLink = true, showEducation
               smooth={true}
               duration={500}
               className={styles.educationLink} 
-              
             >
               Educação
             </ScrollLink>
@@ -80,19 +87,28 @@ export function Header({showGamesLink = true, showBlogLink = true, showEducation
                   Home
                 </Link>
                 {showEducationLink && (
-                  <Link className={styles.educationLink} href="/education">
-                    Educação
-                  </Link>
+                  <p 
+                  className={styles.educationLink} 
+                  onClick={()=> handleTouchScroll('education')}
+                  >
+                  Educação
+                  </p>
                 )}
                 {showBlogLink && (
-                  <Link className={styles.blogLink} href="/blog">
+                  <p 
+                    className={styles.blogLink} 
+                    onClick={() => handleTouchScroll('blog')}
+                    >
                     Blog
-                  </Link>
+                  </p>
                 )}
                 {showGamesLink && (
-                  <Link className={styles.gameLink} href="/games">
+                  <p 
+                    className={styles.gameLink} 
+                    onClick={() => handleTouchScroll('games')}
+                    >
                     Jogos
-                  </Link>
+                  </p>
                 )}
               </div>
             )}
